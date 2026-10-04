@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style (1).css">
+<title>Математика 7-класс — күндөлүк сабак планы</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="hero noprint">
+  <div id="fl" class="fl" aria-hidden="true"></div>
+  <h1>Математика · 7-класс</h1>
+  <p>Күндөлүк сабак планын түзүүчү заманбап жардамчы</p>
+  <div class="glass">
+    <label for="sel">Сабактын темасы</label>
+    <select id="sel"></select>
+    <div class="nt"><input id="newName" placeholder="Жаңы тема жазыңыз..."><button class="btn pink" id="bNew">＋ Тема кошуу</button></div>
+  </div>
+</header>
+<main>
+  <section class="card">
+    <h2 id="ptitle" class="big"></h2>
+    <div class="two"><label>Мугалим<input id="teacher" placeholder="Аты-жөнү"></label><label>Күнү<input id="date" type="date"></label></div>
+  </section>
+
+  <section class="card noprint" id="vizCard">
+    <h2>✨ Визуалдык лаборатория</h2>
+    <div id="viz"></div>
+  </section>
+
+  <section class="card">
+    <h2>🎯 Сабактын максаты</h2><textarea id="goal"></textarea>
+    <h2>✅ Күтүлүүчү натыйжалар</h2><div class="list" data-list="results"></div><button class="btn soft noprint" data-add="results">＋ Кошуу</button>
+    <h2>🧩 Компетенттүүлүктөр</h2><div class="list" data-list="comps"></div><button class="btn soft noprint" data-add="comps">＋ Кошуу</button>
+  </section>
+
+  <section class="card">
+    <h2>⏱️ 45 мүнөттүк план</h2>
+    <div id="bar" class="tl"></div>
+    <div id="stages"></div>
+    <p id="total" class="total"></p>
+  </section>
+
+  <section class="card">
+    <h2>📘 Мисалдар жана чыгарылыштары</h2><div class="list" data-list="examples"></div><button class="btn soft noprint" data-add="examples">＋ Кошуу</button>
+    <h2>🌍 Турмуштук маселелер</h2><div class="list" data-list="life"></div><button class="btn soft noprint" data-add="life">＋ Кошуу</button>
+  </section>
+
+  <section class="card">
+    <h2>✍️ Тапшырмалар жана жооптор</h2><div class="list" data-list="tasks"></div><button class="btn soft noprint" data-add="tasks">＋ Кошуу</button>
+    <h2>📊 Баалоо критерийлери</h2><div class="list" data-list="criteria"></div><button class="btn soft noprint" data-add="criteria">＋ Кошуу</button>
+    <h2>🏠 Үй тапшырмасы</h2><textarea id="hw"></textarea>
+  </section>
+
+  <div class="actions noprint">
+    <button class="btn green" id="bSave">💾 Планды сактоо</button>
+    <button class="btn" id="bPrint">🖨️ Басып чыгаруу</button>
+    <button class="btn soft" id="bReset">↺ Баштапкы абал</button>
+    <button class="btn soft danger" id="bDel" hidden>🗑️ Темани өчүрүү</button>
+  </div>
+</main>
+<div id="toast" class="noprint" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
